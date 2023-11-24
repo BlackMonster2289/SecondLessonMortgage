@@ -1,5 +1,7 @@
 package com.example.secondlessonmortgage;
 
+import static android.os.Build.VERSION_CODES.R;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         countOut.setText(countMonth(percentBank, scholarship, astronomicalTelescopePrice, account, monthlySavings) + "месяцев");
         // 2) подготовка выписка
         String monthlySavingsList = ""; // строка для записи выписки
-        for (float list : monthlySavings) { // цикл хаполнения строки выпиской
+        for (float list : monthlySavings) { // цикл заполнения строки выпиской
             if (list > 0) {
                 monthlySavingsList += Float.toString(list) + ", ";
             } else {
